@@ -21,6 +21,7 @@ public:
 
     void setColor(const QColor &newColor);
     void setDimension(int newDimension);
+       void setWidgetColor();
 
 private slots:
     void on_btnColor_released();
@@ -30,7 +31,7 @@ private:
     QColor m_color;
     int m_dimension;
 
-    void setWidgetColor();
+
 };
 
 #endif // CONFIGURACION_H

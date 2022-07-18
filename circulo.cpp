@@ -3,30 +3,18 @@
 Circulo::Circulo()
     :QPoint(0,0)
 {
- lienzo = QPixmap(500,500);
-  this->dibujar();
+
 }
 
 Circulo::Circulo(int xpos, int ypos)
     :QPoint(xpos, ypos)
 {
-
-    xpos=100;
-    ypos=100;
-}
-
-void Circulo::paint(QPainter &painter)
-{
+    xpos=10;
+    ypos=10;
+    QPainter pintor1;
+    pintor1.drawEllipse(xpos,ypos,ypos,xpos);
 
 }
 
-void Circulo::dibujar()
-{
-    lienzo.fill(Qt::white);
-
-        QPainter painter(&lienzo);
 
 
-
-         painter.drawEllipse(100,100,100,100);
-}

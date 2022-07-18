@@ -6,28 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>518</width>
-    <height>591</height>
+    <width>532</width>
+    <height>548</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Juego</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QFrame" name="marco">
-      <property name="minimumSize">
-       <size>
-        <width>500</width>
-        <height>400</height>
-       </size>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
+     <widget class="QLabel" name="marco">
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
@@ -56,31 +50,43 @@
        <item>
         <widget class="QWidget" name="widget_2" native="true">
          <layout class="QGridLayout" name="gridLayout">
-          <item row="3" column="1">
-           <widget class="QPushButton" name="btnAbajo">
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btnArriba">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 170, 127);</string>
+            </property>
             <property name="text">
-             <string>Abajo</string>
+             <string>Arriba</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="0">
+          <item row="1" column="0">
            <widget class="QPushButton" name="btnIzqueirda">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 170, 127);</string>
+            </property>
             <property name="text">
              <string>Izquierda</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
+          <item row="1" column="2">
            <widget class="QPushButton" name="btnDerecha">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 170, 127);</string>
+            </property>
             <property name="text">
              <string>Derecha</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QPushButton" name="btnArriba">
+          <item row="2" column="1">
+           <widget class="QPushButton" name="btnAbajo">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(170, 170, 127);</string>
+            </property>
             <property name="text">
-             <string>Arriba</string>
+             <string>Abajo</string>
             </property>
            </widget>
           </item>
@@ -110,7 +116,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>518</width>
+     <width>532</width>
      <height>22</height>
     </rect>
    </property>
